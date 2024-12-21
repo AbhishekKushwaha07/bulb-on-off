@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .on-btn
+        {
+            background-color: lightgreen;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 10px;
+        }
+        .off-btn
+        {
+            border-style: solid;
+            padding: 5px 35px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <img src="bulboff.jpeg" height="300px" id="my-image">
+   
+    <br>
+    <hr>
+    <button class="on-btn" id="on" onclick="onbulb()">ON</button>
+    <button class="off-btn" id="off" onclick="offbulb()">&hearts;OFF</button>
+    <script>
+        function onbulb()
+        {
+            const image = document.getElementById('my-image');
+            image.src="off.jpg";
+            
+            
+        }
+        function offbulb()
+        {
+            const image=document.getElementById('my-image');
+            image.src="on1.jpg";
+        }
+    </script>
+</body>
+</html>
